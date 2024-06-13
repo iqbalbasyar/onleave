@@ -21,6 +21,8 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            max-width: 600px;
+            margin: 20px;
         }
         h1 {
             color: #333;
@@ -28,24 +30,66 @@
         p {
             color: #666;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Announcement</h1>
-        <p>I am going on vacation for 1 week. During my absence, my responsibilities will be delegated to my manager or my team</p>
-        <p>For general inquiries, kindly reach Erryan Sazany.
-        </p>
-        Please reach the following PICs for specific request
-        <ul>
-            <li><span>dennis.destian:</span> Price Bidding - RM Seller Tracker (General)</li>
-            <li><span>dennis.destian:</span> Price Bidding - OKR Metrics</li>
-            <li><span>jeremy.novriawan:</span> Price Bidding - Daily QC Log Report</li>
-            <li><span>jeremy.novriawan:</span> Price Bidding - Weekly Seller Incentive Leaderboard</li>
-            <li><span>jeremy.novriawan:</span> Price Bidding - RM Seller Tracker (RM Level)</li>
-            <li><span>rendi.watulingas:</span> Termurah Di Shopee - Weekly PN List</li>
-            <li><span>rendi.watulingas:</span> Termurah Di Shopee - BRS KSP Manual Label Daily Refreshement</li>
-        </ul>
+        <p>I am going on vacation for 1 week. During my absence, my responsibilities will be delegated to the following people:</p>
+        <table>
+            <tr>
+                <th>Contact Person</th>
+                <th>Responsibility</th>
+            </tr>
+            <tr>
+                <td>dennis.destian</td>
+                <td>Price Bidding - RM Seller Tracker (General)</td>
+            </tr>
+            <tr>
+                <td>dennis.destian</td>
+                <td>Price Bidding - OKR Metrics</td>
+            </tr>
+            <tr>
+                <td>jeremy.novriawan</td>
+                <td>Price Bidding - Daily QC Log Report</td>
+            </tr>
+            <tr>
+                <td>jeremy.novriawan</td>
+                <td>Price Bidding - Weekly Seller Incentive Leaderboard</td>
+            </tr>
+            <tr>
+                <td>jeremy.novriawan</td>
+                <td>Price Bidding - RM Seller Tracker (RM Level)</td>
+            </tr>
+            <tr>
+                <td>rendi.watulingas</td>
+                <td>Termurah Di Shopee - Weekly PN List</td>
+            </tr>
+            <tr>
+                <td>rendi.watulingas</td>
+                <td>Termurah Di Shopee - BRS KSP Manual Label Daily Refreshement</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
